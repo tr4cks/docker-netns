@@ -52,6 +52,9 @@ var (
 				os.Exit(1)
 			}
 		},
+		CompletionOptions: cobra.CompletionOptions{
+			DisableDefaultCmd: true,
+		},
 	}
 	svcConfig = &service.Config{
 		Name:        "docker-netns",
