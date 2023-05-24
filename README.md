@@ -58,8 +58,8 @@
 This tool allows to execute commands in the network namespace of a container from the host. It can be used to execute binaries such as `ip`, `iptables`, `ebtables`...
 
 Two modes are available:
-- Shell mode: allows to test commands within a shell in the network space of a container.
-- Daemon mode: allows to run commands in the background at container startup. Each command is executed within the network space of the chosen containers.
+- Shell mode: allows to test commands within a shell in the network namespace of a container.
+- Daemon mode: allows to run commands in the background at container startup. Each command is executed within the network namespace of the chosen containers.
 
 *❗️ Commands are not executed within a container but within the network namespace of a container from the host.*
 
@@ -99,7 +99,7 @@ chmod 755 /bin/docker-netns
 
 ### Shell Mode
 
-This mode allows to start a new shell in which it is possible to execute commands in the same network space as a container whose ID is passed in parameter.
+This mode allows to start a new shell in which it is possible to execute commands in the same network namespace as a container whose ID is passed in parameter.
 
 It can be used to check that your commands have been taken into account when you use it in daemon mode.
 
