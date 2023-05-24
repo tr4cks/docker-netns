@@ -115,8 +115,6 @@ This mode allows to run commands in the background at the startup of some contai
 
 Start by indicating in a yaml file the different commands you want to run in each container network namespace:
 
-The commands are not executed within the container but within the network space of the container
-
 *Containers must be represented by their identifiers.*
 
 ```yaml
