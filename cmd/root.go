@@ -32,7 +32,7 @@ var (
 	rootCmd    = &cobra.Command{
 		Use:     appName,
 		Short:   "Docker network namespace manager",
-		Version: "1.0.0",
+		Version: "1.0.1",
 		Run: func(cmd *cobra.Command, args []string) {
 			prg := NewProgram()
 			s, err := service.New(prg, svcConfig)
